@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/effects.css" />
+
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00599a",
+                        "primary-dark": "#004070",
+                        "navy-deep": "#002d51",
+                        "accent-orange": "#ff8b2c",
+                        "accent-dark": "#e67a22",
+                        "background-light": "#ffffff",
+                        "background-alt": "#f8fafc",
+                        "text-main": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <!-- SEO Básico -->
+    <meta name="description" content="Página no encontrada en VAMOS." />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+
+    <title>Página No Encontrada | VAMOS</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-background-light font-display text-text-main antialiased flex flex-col min-h-screen">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 header-glass border-b border-slate-100 shadow-sm h-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-full relative">
+            <div class="flex items-center h-full">
+                <a class="flex items-center" href="index.html">
+                    <img alt="VAMOS" class="w-auto h-9 md:h-11 transition-transform duration-300 hover:scale-105" src="img/Logo%20Vamos.png" />
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 lg:gap-10">
+                <a class="text-navy-deep hover:text-primary font-black text-sm uppercase tracking-widest transition-colors whitespace-nowrap"
+                    href="programas.html">Programas</a>
+                <a class="text-navy-deep hover:text-primary font-black text-sm uppercase tracking-widest transition-colors whitespace-nowrap"
+                    href="acerca.html">Acerca de</a>
+                <a class="bg-primary text-white hover:bg-navy-deep px-5 py-2.5 rounded-full font-black text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg whitespace-nowrap flex items-center"
+                    href="contactanos.html">
+                    <span class="material-symbols-outlined text-[18px] mr-2">mail</span>
+                    Contáctanos
+                </a>
+                <a class="bg-accent-orange text-white hover:bg-accent-dark px-5 py-2.5 rounded-full font-black text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg whitespace-nowrap flex items-center"
+                    href="apoya.html">
+                    <span class="material-symbols-outlined text-[18px] mr-2">favorite</span>
+                    Donaciones
+                </a>
+            </nav>
+            <button
+                class="md:hidden text-navy-deep hover:text-primary w-10 h-10 flex items-center justify-center rounded-xl bg-slate-50 transition-colors"
+                id="mobile-menu-btn" aria-label="Abrir menú">
+                <span class="material-symbols-outlined text-2xl" id="menu-icon">menu</span>
+            </button>
+        </div>
+        <!-- MOBILE MENU OVERLAY -->
+        <div class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300"
+            id="mobile-menu-overlay"></div>
+        <div class="fixed top-0 right-0 h-full w-[280px] sm:w-[320px] bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col"
+            id="mobile-menu">
+            <div class="h-20 flex items-center justify-end px-6 border-b border-slate-100">
+                <button
+                    class="text-slate-400 hover:text-navy-deep w-10 h-10 flex items-center justify-center rounded-xl hover:bg-slate-50 transition-colors"
+                    id="close-menu-btn" aria-label="Cerrar menú">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+            <div class="flex-1 overflow-y-auto py-8 px-6">
+                <nav class="flex flex-col gap-6">
+                    <a class="text-navy-deep hover:text-primary font-black text-lg uppercase tracking-widest transition-colors flex items-center"
+                        href="programas.html">
+                        <span class="material-symbols-outlined mr-4 text-slate-300">school</span>
+                        Programas
+                    </a>
+                    <a class="text-navy-deep hover:text-primary font-black text-lg uppercase tracking-widest transition-colors flex items-center"
+                        href="acerca.html">
+                        <span class="material-symbols-outlined mr-4 text-slate-300">info</span>
+                        Acerca de
+                    </a>
+                    <a class="text-navy-deep hover:text-primary font-black text-lg uppercase tracking-widest transition-colors flex items-center"
+                        href="apoya.html">
+                        <span class="material-symbols-outlined mr-4 text-slate-300">favorite</span>
+                        Donaciones
+                    </a>
+                    <a class="text-navy-deep hover:text-primary font-black text-lg uppercase tracking-widest transition-colors flex items-center"
+                        href="contactanos.html">
+                        <span class="material-symbols-outlined mr-4 text-slate-300">mail</span>
+                        Contáctanos
+                    </a>
+                    <div class="pt-6 border-t border-slate-100 mt-2">
+                        <a class="bg-primary text-white hover:bg-navy-deep px-6 py-4 rounded-xl font-black text-base uppercase tracking-widest transition-all shadow-md flex items-center justify-center w-full"
+                            href="apoya.html">
+                            <span class="material-symbols-outlined mr-2">favorite</span>
+                            Dona
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-24 px-6 topo-bg relative overflow-hidden">
+        <div class="absolute inset-0 bg-white/80 z-0"></div>
+        <div class="max-w-2xl mx-auto text-center relative z-10 reveal">
+            <span class="material-symbols-outlined text-9xl text-slate-200 mb-6">explore_off</span>
+            <h1 class="text-6xl md:text-8xl font-black text-navy-deep mb-4 tracking-tight">404</h1>
+            <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-6">Parece que te saliste del mapa</h2>
+            <p class="text-lg text-slate-600 mb-10 leading-relaxed">
+                La página que estás buscando no existe o ha sido movida. No te preocupes, te ayudamos a volver al camino correcto.
+            </p>
+            <a href="index.html" class="inline-flex items-center bg-primary text-white px-8 py-4 rounded-full font-black text-lg hover:bg-navy-deep transition-all shadow-xl magnetic-btn group">
+                <span class="material-symbols-outlined mr-2 group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                Volver al inicio
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-50 text-slate-600 py-24 px-6 border-t border-slate-100" id="footer">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 reveal">
+            <div class="col-span-1 md:col-span-2">
+                <div class="mb-8">
+                    <img alt="VAMOS" class="h-12 w-auto" src="img/Logo%20Vamos.png" />
+                </div>
+                <p class="text-slate-500 max-w-sm mb-10 leading-relaxed text-lg">
+                    Vocación. Transformación. Impacto.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-black text-navy-deep mb-8 uppercase tracking-widest text-sm">Navegación</h4>
+                <ul class="flex flex-col gap-5 font-bold">
+                    <li><a class="text-navy-deep hover:text-primary transition-colors"
+                            href="programas.html">Programas</a></li>
+                    <li><a class="text-navy-deep hover:text-primary transition-colors" href="acerca.html">Acerca de</a></li>
+                    <li><a class="text-navy-deep hover:text-primary transition-colors" href="apoya.html">Donaciones</a></li>
+                    <li><a class="text-navy-deep hover:text-primary transition-colors" href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-navy-deep mb-8 uppercase tracking-widest text-sm">Contacto</h4>
+                <!-- TODO: reemplazar con los datos de contacto reales de VAMOS -->
+                <ul class="flex flex-col gap-5 font-bold">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-accent-orange mt-0.5">location_on</span>
+                        <span class="text-slate-500">Manuel Ojinaga 1824, Col. Santa Rita, 31020 Chihuahua, México.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent-orange">call</span>
+                        <span class="text-slate-500">Teléfono pendiente</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent-orange">mail</span>
+                        <a href="mailto:vamosint.ac@gmail.com" class="text-primary hover:text-navy-deep transition-colors">vamosint.ac@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-slate-200 mt-20 pt-10 flex flex-col gap-4">
+            
+            <p class="text-slate-400 text-xs font-medium leading-relaxed max-w-3xl">VAMOS — Visionarios Anónimos al Mundo con el Objetivo de Servir Internacional, A.C. · Asociación Civil sin fines de lucro · RFC: VAM2404015L1 · Domicilio fiscal: Manuel Ojinaga 1824, Col. Santa Rita, 31020 Chihuahua, México.</p>
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-slate-400 text-sm font-bold gap-4">
+                <p>© <span id="year"></span> VAMOS. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="aviso-privacidad.html" class="text-slate-400 hover:text-primary transition-colors">Aviso de Privacidad</a>
+                    <a href="terminos.html" class="text-slate-400 hover:text-primary transition-colors">Términos y Condiciones</a>
+                </div>
+            </div>
+            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>

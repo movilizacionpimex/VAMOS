@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/effects.css" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#00599a",
+                        "primary-dark": "#004070",
+                        "navy-deep": "#002d51",
+                        "accent-orange": "#ff8b2c",
+                        "accent-dark": "#e67a22",
+                        "background-light": "#ffffff",
+                        "background-alt": "#f8fafc",
+                        "text-main": "#1e293b",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <!-- SEO Básico -->
+    <meta name="description"
+        content="Aviso de Privacidad de VAMOS conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)." />
+    <meta name="robots" content="index, follow" />
+    <!-- Open Graph (Facebook, WhatsApp) -->
+    <meta property="og:title" content="VAMOS | Aviso de Privacidad" />
+    <meta property="og:description" content="Aviso de Privacidad de VAMOS conforme a la LFPDPPP." />
+    <meta property="og:image" content="https://vamosinternacional.org/img/Logo%20Vamos.png" />
+    <meta property="og:url" content="https://vamosinternacional.org/aviso-privacidad.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_MX" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/favicon.png" />
+
+    <title>VAMOS | Aviso de Privacidad</title>
+    <link rel="canonical" href="https://vamosinternacional.org/aviso-privacidad.html" />
+</head>
+
+<body class="bg-background-light font-display text-text-main antialiased selection:bg-accent-orange selection:text-white">
+    <!-- HEADER -->
+    <header class="sticky top-0 z-50 header-glass border-b border-slate-100 shadow-sm h-20">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 flex items-center justify-between h-full relative">
+            <div class="flex items-center h-full">
+                <a class="flex items-center" href="index.html">
+                    <img alt="VAMOS" class="w-auto h-9 md:h-11 transition-transform duration-300 hover:scale-105" src="img/Logo%20Vamos.png" />
+                </a>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 lg:gap-10">
+                <a class="text-navy-deep hover:text-primary font-black text-sm uppercase tracking-widest transition-colors whitespace-nowrap"
+                    href="programas.html">Programas</a>
+                <a class="text-navy-deep hover:text-primary font-black text-sm uppercase tracking-widest transition-colors whitespace-nowrap"
+                    href="acerca.html">Acerca de</a>
+                <a class="bg-primary text-white hover:bg-navy-deep px-5 py-2.5 rounded-full font-black text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg whitespace-nowrap flex items-center"
+                    href="contactanos.html">
+                    <span class="material-symbols-outlined text-[18px] mr-2">mail</span>
+                    Contáctanos
+                </a>
+                <a class="bg-accent-orange text-white hover:bg-accent-dark px-5 py-2.5 rounded-full font-black text-sm uppercase tracking-widest transition-all shadow-md hover:shadow-lg whitespace-nowrap flex items-center"
+                    href="apoya.html">
+                    <span class="material-symbols-outlined text-[18px] mr-2">favorite</span>
+                    Donaciones
+                </a>
+            </nav>
+            <!-- Botón hamburger -->
+            <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Abrir menú de navegación">
+                <span class="w-6 h-0.5 bg-navy-deep block transition-all"></span>
+                <span class="w-6 h-0.5 bg-navy-deep block transition-all"></span>
+                <span class="w-6 h-0.5 bg-navy-deep block transition-all"></span>
+            </button>
+        </div>
+
+        <!-- Menú móvil -->
+        <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-white shadow-lg px-6 py-6 z-50 border-t border-slate-100">
+            <nav class="flex flex-col gap-4">
+                <a href="programas.html" class="text-navy-deep font-bold py-2 no-underline">Programas</a>
+                <a href="acerca.html" class="text-navy-deep font-bold py-2 no-underline">Acerca de</a>
+                <a href="apoya.html" class="text-navy-deep font-bold py-2 no-underline">Donaciones</a>
+                <a href="contactanos.html" class="bg-primary text-white text-center py-3 rounded-full font-black uppercase tracking-wider text-sm no-underline mt-2 hover:bg-navy-deep transition-colors">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="relative pt-32 pb-20 bg-navy-deep text-white overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-20 topo-bg mix-blend-overlay"></div>
+            <div class="absolute inset-0 z-0 bg-gradient-to-t from-navy-deep to-transparent opacity-90"></div>
+            <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+                <span class="inline-block bg-white/10 backdrop-blur-md border border-white/20 text-blue-200 px-6 py-2 rounded-full font-black text-sm uppercase tracking-widest mb-8 reveal">Legal</span>
+                <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight tracking-tight reveal delay-100">
+                    Aviso de Privacidad
+                </h1>
+                <p class="text-lg text-blue-100/90 font-medium leading-relaxed max-w-2xl mx-auto reveal delay-200">
+                    Tu confianza es parte esencial de nuestro impacto. Así protegemos y tratamos tus datos personales.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contenido legal -->
+        <section class="py-20 bg-white">
+            <div class="max-w-3xl mx-auto px-6">
+
+                <!-- Nota de personalización (eliminar al publicar definitivo) -->
+                <!-- TODO LEGAL: Validar este documento con el contador/abogado fiscal de VAMOS antes de su publicación definitiva. Sustituir los campos marcados con [—]. -->
+
+                <div class="prose prose-slate max-w-none space-y-10 text-slate-600 leading-relaxed">
+
+                    <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-sm text-slate-600">
+                        <p class="m-0"><strong class="text-navy-deep">Última actualización:</strong> <span id="last-updated">[—]</span>. El presente Aviso de Privacidad se emite en cumplimiento de la <strong>Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)</strong>, su Reglamento y los Lineamientos del Aviso de Privacidad.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">1. Identidad y domicilio del responsable</h2>
+                        <p>
+                            <strong>Visionarios Anónimos al Mundo con el Objetivo de Servir Internacional, A.C.</strong>
+                            (en adelante, &ldquo;VAMOS&rdquo;), asociación civil sin fines de lucro, con domicilio en
+                            Manuel Ojinaga 1824, Col. Santa Rita, C.P. 31020, Chihuahua, Chihuahua, México, es responsable
+                            del tratamiento y protección de sus datos personales conforme al presente Aviso de Privacidad.
+                            Para cualquier asunto relacionado, puede contactarnos en
+                            <a href="mailto:vamosint.ac@gmail.com" class="text-primary font-bold no-underline hover:text-navy-deep">vamosint.ac@gmail.com</a>.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">2. Datos personales que recabamos</h2>
+                        <p>Podemos recabar los siguientes datos personales, ya sea de forma directa cuando usted nos los
+                            proporciona (por ejemplo, al escribirnos por correo electrónico o al realizar un donativo):</p>
+                        <ul class="list-disc pl-6 space-y-1">
+                            <li>Datos de identificación y contacto: nombre, correo electrónico y, en su caso, teléfono.</li>
+                            <li>Datos relacionados con donativos: monto, fecha y, cuando aplique, datos fiscales para la
+                                emisión del comprobante correspondiente.</li>
+                        </ul>
+                        <p>VAMOS <strong>no recaba datos personales sensibles</strong> a través de este sitio web.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">3. Finalidades del tratamiento</h2>
+                        <p><strong>Finalidades primarias</strong> (necesarias para la relación con usted):</p>
+                        <ul class="list-disc pl-6 space-y-1">
+                            <li>Atender sus solicitudes de información, dudas y comentarios.</li>
+                            <li>Gestionar, registrar y dar seguimiento a los donativos.</li>
+                            <li>Emitir, cuando proceda, el comprobante fiscal correspondiente.</li>
+                            <li>Dar cumplimiento a obligaciones legales y fiscales de la asociación.</li>
+                        </ul>
+                        <p><strong>Finalidades secundarias</strong> (no necesarias, puede oponerse):</p>
+                        <ul class="list-disc pl-6 space-y-1">
+                            <li>Enviarle información sobre nuestros programas, actividades y campañas.</li>
+                            <li>Invitarle a participar en eventos o iniciativas de la asociación.</li>
+                        </ul>
+                        <p>Si no desea que sus datos se traten para las finalidades secundarias, puede comunicarlo en
+                            cualquier momento al correo
+                            <a href="mailto:vamosint.ac@gmail.com" class="text-primary font-bold no-underline hover:text-navy-deep">vamosint.ac@gmail.com</a>.
+                            Su negativa no será motivo para negarle los servicios que solicita.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">4. Transferencia de datos</h2>
+                        <p>VAMOS <strong>no transfiere sus datos personales a terceros</strong>, salvo en los casos
+                            previstos por el artículo 37 de la LFPDPPP (por ejemplo, cuando sea requerido por autoridad
+                            competente o resulte necesario para el cumplimiento de obligaciones legales). En dichos casos
+                            no se requiere su consentimiento.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">5. Medios para ejercer los derechos ARCO</h2>
+                        <p>Usted tiene derecho a <strong>Acceder, Rectificar y Cancelar</strong> sus datos personales, así
+                            como a <strong>Oponerse</strong> a su tratamiento (derechos ARCO). Para ejercerlos, envíe una
+                            solicitud al correo
+                            <a href="mailto:vamosint.ac@gmail.com" class="text-primary font-bold no-underline hover:text-navy-deep">vamosint.ac@gmail.com</a>
+                            indicando: (i) su nombre y medio para recibir respuesta; (ii) los documentos que acrediten su
+                            identidad; (iii) la descripción clara de los datos y del derecho que desea ejercer. Daremos
+                            respuesta en los plazos que establece la LFPDPPP.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">6. Revocación del consentimiento</h2>
+                        <p>Usted puede revocar en cualquier momento el consentimiento que, en su caso, nos haya otorgado
+                            para el tratamiento de sus datos personales, mediante solicitud al mismo correo de contacto,
+                            en el entendido de que dicha revocación no podrá tener efectos retroactivos.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">7. Uso de cookies</h2>
+                        <p>Este sitio web puede utilizar cookies y tecnologías similares con fines de funcionamiento y
+                            medición estadística. Usted puede deshabilitarlas desde la configuración de su navegador, sin
+                            que ello afecte la posibilidad de navegar por el sitio.</p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-2xl font-black text-navy-deep mb-3">8. Cambios al Aviso de Privacidad</h2>
+                        <p>VAMOS podrá actualizar el presente Aviso de Privacidad en cualquier momento. Las modificaciones
+                            estarán disponibles en esta misma página
+                            (<span class="break-all">https://vamosinternacional.org/aviso-privacidad.html</span>).
+                            Le recomendamos revisarla periódicamente.</p>
+                    </div>
+
+                    <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 text-sm">
+                        <p class="m-0 text-slate-500">Si considera que su derecho a la protección de datos personales ha
+                            sido vulnerado, puede acudir al Instituto Nacional de Transparencia, Acceso a la Información y
+                            Protección de Datos Personales (INAI) o a la autoridad que conforme a la legislación vigente
+                            resulte competente.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-50 text-slate-600 py-24 px-6 border-t border-slate-100" id="footer">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-4 gap-16 reveal">
+            <div class="col-span-1 md:col-span-2">
+                <div class="mb-8">
+                    <img alt="VAMOS" class="h-12 w-auto" src="img/Logo%20Vamos.png" />
+                </div>
+                <p class="text-slate-500 max-w-sm mb-10 leading-relaxed text-lg">
+                    Vocación. Transformación. Impacto.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-black text-navy-deep mb-8 uppercase tracking-widest text-sm">Navegación</h4>
+                <ul class="flex flex-col gap-5 font-bold">
+                    <li><a class="text-navy-deep hover:text-primary transition-colors" href="programas.html">Programas</a></li>
+                    <li><a class="text-navy-deep hover:text-primary transition-colors" href="acerca.html">Acerca de</a></li>
+                    <li><a class="text-navy-deep hover:text-primary transition-colors" href="apoya.html">Donaciones</a></li>
+                    <li><a class="text-navy-deep hover:text-primary transition-colors" href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-black text-navy-deep mb-8 uppercase tracking-widest text-sm">Contacto</h4>
+                <!-- TODO: reemplazar con los datos de contacto reales de VAMOS -->
+                <ul class="flex flex-col gap-5 font-bold">
+                    <li class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-accent-orange mt-0.5">location_on</span>
+                        <span class="text-slate-500">Manuel Ojinaga 1824, Col. Santa Rita, 31020 Chihuahua, México.</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent-orange">call</span>
+                        <span class="text-slate-500">Teléfono pendiente</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-accent-orange">mail</span>
+                        <a href="mailto:vamosint.ac@gmail.com" class="text-primary hover:text-navy-deep transition-colors">vamosint.ac@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-slate-200 mt-20 pt-10 flex flex-col gap-4">
+            
+            <p class="text-slate-400 text-xs font-medium leading-relaxed max-w-3xl">VAMOS — Visionarios Anónimos al Mundo con el Objetivo de Servir Internacional, A.C. · Asociación Civil sin fines de lucro · RFC: VAM2404015L1 · Domicilio fiscal: Manuel Ojinaga 1824, Col. Santa Rita, 31020 Chihuahua, México.</p>
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center text-slate-400 text-sm font-bold gap-4">
+                <p>© <span id="year"></span> VAMOS. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <a href="aviso-privacidad.html" class="text-slate-400 hover:text-primary transition-colors">Aviso de Privacidad</a>
+                    <a href="terminos.html" class="text-slate-400 hover:text-primary transition-colors">Términos y Condiciones</a>
+                </div>
+            </div>
+            <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
